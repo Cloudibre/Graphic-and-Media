@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+   <h1>Graphic and Media Qurieis</h1>
+   <svg>  
+     <rect width="100px" height="200px" style="fill:red;"/>
+     <circle cx="200px" cy="200" r="100px" style="fill:green"/>
+
+   </svg>
+
+<canvas width="500px" height="500px" id="mycanvas" style="border:green solid 10px;">
+</canvas>
+
+   <script>
+
+       var canvas = document.getElementById("my-first-canvas"); // variable that attaches to your html document
+   var context = canvas.getContext("2d"); // getContext decides the “type” of canvas
+   // x and y coordinates always start at the top left of an element or the page
+   context.moveTo(0, 0);  // x, y coordinates where the line starts
+   context.lineTo(200,100); //x, y coordinates where the line ends
+   context.stroke(); // function that creates the line, won’t work without this codec
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
